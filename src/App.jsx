@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import { useEffect } from "react";
 
+
 function Welcome(props) {
   return (<h1>hey sexy ,!! its  {props.name} | and im {props.gender}</h1>)
 }
@@ -93,7 +94,7 @@ function GameList() {
 
 function Game(props) {
   return (
-    <div style={{ backgroundColor: "teal", color: "#ff0046", textAlign: "center", borderRadius: "45%" }} >
+    <div style={{ backgroundColor: "teal", width: "50%", marginLeft: "22%", color: "#ff0046", textAlign: "center", borderRadius: "10px" }} >
       <hr />
       <h1>{props.title}</h1>
       <hr />
@@ -116,6 +117,7 @@ function App() {
           <Counter />
           <Counainer />
           <GameList />
+
         </div>
 
       </div>
