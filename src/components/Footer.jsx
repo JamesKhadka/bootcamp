@@ -28,7 +28,7 @@ const Footer = () => {
         </div>
 
         {/* Contact & Social Links */}
-        <div className="w-1/3 ml-10">
+        <div className="w-1/4 ml-10 ">
           <h3 className="text-xl font-bold mb-4">Connect with Us</h3>
           <ul className="mb-4">
             <li className="mb-2">📞 +977-..........</li>

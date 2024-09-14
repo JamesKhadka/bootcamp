@@ -1,7 +1,12 @@
-console.log('hello hi bye');
+console.log("Hello JS")
+
 
 fetch('https://dummyjson.com/products')
-  .then(res => res.json()) // Return the result of res.json()
-  .then(jsonData => {
-    console.log(jsonData.products.map(product => ` ${product.title}`)); // Corrected arrow function and template literal
-  });
+  .then((response) => {
+    return response.json()
+  })
+  .then((jsonData) => {
+    console.log(jsonData.products.map(
+      (product) => `${product.title} , Price:${product.price}`
+    ))
+  })

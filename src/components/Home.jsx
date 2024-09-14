@@ -1,7 +1,6 @@
 import React from 'react';
 import Counters from './Counter';
 import Footer from './Footer';
-import Started from './Started';
 import { Link } from 'react-router-dom';
 
 
@@ -16,7 +15,7 @@ const HomePage = () => {
           <div className="text-center text-white px-8">
             <h1 className="text-6xl font-bold mb-4">Welcome to Antu Homestay Service</h1>
             <p className="text-2xl mb-6">We provide the best comfort for your stay</p>
-            <Link to="/started" className="bg-blue-500 text-white px-6 py-3 rounded-full hover:bg-blue-600 transition duration-300"> Get Started </Link>
+            <Link to="/started" className="bg-teal-600 text-white px-6 py-3 rounded-full font-bold hover:bg-blue-600 transition duration-300"> Get Started </Link>
           </div>
         </div>
       </header>

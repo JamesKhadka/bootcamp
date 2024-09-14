@@ -1,5 +1,4 @@
 import React from 'react';
-import hotels from '../hotelsCom/HotelSample';
 import HotelCard from '../hotelsCom/HotelCard';
 
 

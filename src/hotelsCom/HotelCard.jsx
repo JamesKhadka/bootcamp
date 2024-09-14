@@ -23,7 +23,7 @@ const HotelCard = ({ hotel }) => {
     <>
       {/* Original card */}
       <div
-        className={`bg-indigo-300 rounded-2xl transition-all duration-300 ease-in-out p-4 cursor-pointer ${isOpen ? 'hidden' : 'hover:scale-105 hover:shadow-lg hover:bg-cyan-300'
+        className={`bg-indigo-300 rounded-2xl transition-all duration-300 ease-in-out p-4 cursor-pointer ${isOpen ? 'hidden' : 'hover:scale-105  hover:bg-cyan-300 hover:shadow-black hover:shadow-xl'
           }`}
         onClick={handleClick}
         style={{ maxHeight: isOpen ? '0' : '300px', overflow: 'hidden' }}
@@ -36,7 +36,7 @@ const HotelCard = ({ hotel }) => {
       {/* New card */}
       {newCardVisible && (
         <div
-          className="bg-indigo-300 p-6 rounded-2xl shadow-lg flex flex-col cursor-pointer transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg hover:bg-cyan-300"
+          className="bg-indigo-300 p-6 rounded-2xl shadow-lg flex flex-col cursor-pointer transition-all duration-300 ease-in-out hover:scale-105  hover:bg-cyan-300  hover:shadow-black hover:shadow-xl"
           onClick={handleClick} // Clicking this card will hide it and show the original card
         >
           <h3 className="text-2xl font-bold mb-4">{hotel.name}</h3>
@@ -46,8 +46,7 @@ const HotelCard = ({ hotel }) => {
             href={hotel.bookLink}
             className="text-cyan-500 hover:underline"
             target="_blank"
-            rel="noopener noreferrer"
-          >
+            rel="noopener noreferrer" >
             Book Now
           </a>
         </div>
