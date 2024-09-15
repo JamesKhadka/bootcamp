@@ -10,7 +10,7 @@ const Layout = ({ children }) => {
       {/* Navigation Bar */}
       <nav className="bg-pink-400 shadow-lg">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <div className="text-xl font-semibold text-black">
+          <div className="text-xl font-semibold text-black cursor-pointer">
             Antu Homes
           </div>
           <ul className="flex space-x-6 text-black">
